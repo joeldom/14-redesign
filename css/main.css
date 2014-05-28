@@ -5400,6 +5400,36 @@ a:hover, a:focus {
     position: absolute!important;
     clip: rect(1px, 1px, 1px, 1px);
 }
+.palette-grey05 {
+    color: #f6f6f6;
+}
+.palette-grey10 {
+    color: #ebebeb;
+}
+.palette-grey15 {
+    color: #dedede;
+}
+.palette-grey20 {
+    color: #cfcfcf;
+}
+.palette-grey30 {
+    color: #acacac;
+}
+.palette-grey40 {
+    color: #999999;
+}
+.palette-grey50 {
+    color: #7c7c7c;
+}
+.palette-grey60 {
+    color: #6b6b6b;
+}
+.palette-grey70 {
+    color: #5b5b5b;
+}
+.palette-grey80 {
+    color: #474747;
+}
 .palette-blue {
     color: #00b9cf;
 }

@@ -5409,6 +5409,9 @@ a:hover, a:focus {
 .palette-grey15 {
     color: #dedede;
 }
+.palette-grey20.palette-inverse{
+	background-color: #cfcfcf;
+}
 .palette-grey20 {
     color: #cfcfcf;
 }

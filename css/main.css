@@ -5092,7 +5092,7 @@ a:hover, a:focus {
 }
 .navbar-nav>li>a:hover, .dropdown-menu>li>a:hover, .dropdown-submenu>li>a:hover, .navbar-nav>li>a:focus, .dropdown-menu>li>a:focus, .dropdown-submenu>li>a:focus, .navbar-nav>li>a.dropdown-toggle:hover, .dropdown-menu>li>a.dropdown-toggle:hover, .dropdown-submenu>li>a.dropdown-toggle:hover, .navbar-nav>li>a.dropdown-toggle:focus, .dropdown-menu>li>a.dropdown-toggle:focus, .dropdown-submenu>li>a.dropdown-toggle:focus {
     background: transparent;
-    color: #00b9cf;
+    color: #841e1e;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .navbar-nav>li.active>a, .dropdown-menu>li.active>a, .dropdown-submenu>li.active>a, .navbar-nav>li.open>a, .dropdown-menu>li.open>a, .dropdown-submenu>li.open>a {
@@ -5294,7 +5294,7 @@ a:hover, a:focus {
     color: #878c8c;
 }
 .footer a:hover, .footer a:focus {
-    color: #00b9cf;
+    color: #841e1e;
 }
 .footer address {
     line-height: 18px;

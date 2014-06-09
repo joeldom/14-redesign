@@ -6301,7 +6301,7 @@ body {
     transition: padding .2s ease; }
     /* line 6417, ../sass/main.scss */
     body.open, body.in {
-      padding-top: 133px; }
+      padding-top: 80px; }
 
   /* line 6422, ../sass/main.scss */
   [data-picture].picturefill-small {
@@ -7688,10 +7688,10 @@ a {
 
 /* line 7873, ../sass/main.scss */
 .palette-blue {
-  color: #841e1e; }
+  color: #686258; }
   /* line 7875, ../sass/main.scss */
   .palette-blue.palette-inverse {
-    background-color: #841e1e; }
+    background-color: #686258; }
 
 /* line 7880, ../sass/main.scss */
 .palette-coral {

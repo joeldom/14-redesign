@@ -6415,7 +6415,7 @@ body {
     -webkit-transition: padding .2s ease;
     transition: padding .2s ease;
     &.open, &.in {
-      padding-top: 133px;
+      padding-top: 80px;
     }
   }
   [data-picture] {
@@ -7871,9 +7871,9 @@ a {
 }
 
 .palette-blue {
-  color: #841e1e;
+  color: #686258;
   &.palette-inverse {
-    background-color: #841e1e;
+    background-color: #686258;
   }
 }
 

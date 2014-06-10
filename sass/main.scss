@@ -14,8 +14,8 @@ body {
   font-family: "Helvetica-Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.2857142857142858;
-  color: #62645c;
-  background-color: #f4f4f4;
+  color: $textcolor ;
+  background-color: $lightgrey;
 }
 
 input, button, select, textarea {
@@ -25,14 +25,14 @@ input, button, select, textarea {
 }
 
 a {
-  color: #545454;/* #545454 #62645c */
+  color: $linkcolor ;/* #545454 #62645c */
   text-decoration: none;
   &:hover {
-    color: $linkcolor;
+    color: $linkhovercolor;
     text-decoration: underline;
   }
   &:focus {
-    color: $linkcolor;
+    color: $linkhovercolor;
     text-decoration: underline;
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -175,7 +175,7 @@ cite {
 }
 
 .text-primary {
-  color: $linkcolor;
+  color: $linkhovercolor;
   &:hover {
     color: #008b9c;
   }
@@ -872,7 +872,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   color: #fff;
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
   &:hover, &:focus, &:active, &.active {
     color: #fff;
@@ -899,66 +899,66 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary {
   &.disabled, &[disabled] {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-primary {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-primary {
   &.disabled:hover, &[disabled]:hover {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-primary:hover {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-primary {
   &.disabled:focus, &[disabled]:focus {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-primary:focus {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-primary {
   &.disabled:active, &[disabled]:active {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-primary:active {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-primary {
   &.disabled.active, &[disabled].active {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-primary.active {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-primary .badge {
-  color: $linkcolor;
+  color: $linkhovercolor;
   background-color: #fff;
 }
 
@@ -1240,7 +1240,7 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
   color: #fff;
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
   &:hover, &:focus, &:active, &.active {
     color: #fff;
@@ -1267,66 +1267,66 @@ fieldset[disabled] .btn-success.active {
 
 .btn-info {
   &.disabled, &[disabled] {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-info {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-info {
   &.disabled:hover, &[disabled]:hover {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-info:hover {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-info {
   &.disabled:focus, &[disabled]:focus {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-info:focus {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-info {
   &.disabled:active, &[disabled]:active {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-info:active {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-info {
   &.disabled.active, &[disabled].active {
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     border-color: #00a2b6;
   }
 }
 
 fieldset[disabled] .btn-info.active {
-  background-color: $linkcolor;
+  background-color: $linkhovercolor;
   border-color: #00a2b6;
 }
 
 .btn-info .badge {
-  color: $linkcolor;
+  color: $linkhovercolor;
   background-color: #fff;
 }
 
@@ -1357,7 +1357,7 @@ fieldset[disabled] .btn-link {
     border-color: transparent;
   }
   &:hover, &:focus {
-    color: $linkcolor;
+    color: $linkhovercolor;
     text-decoration: underline;
     background-color: transparent;
   }
@@ -1500,12 +1500,12 @@ input {
       color: #fff;
       text-decoration: none;
       outline: 0;
-      background-color: $linkcolor;
+      background-color: $linkhovercolor;
       &:hover, &:focus {
         color: #fff;
         text-decoration: none;
         outline: 0;
-        background-color: $linkcolor;
+        background-color: $linkhovercolor;
       }
     }
     .disabled > a {
@@ -1615,13 +1615,13 @@ a.list-group-item {
   &.active {
     z-index: 2;
     color: #fff;
-    background-color: $linkcolor;
-    border-color: $linkcolor;
+    background-color: $linkhovercolor;
+    border-color: $linkhovercolor;
     &:hover, &:focus {
       z-index: 2;
       color: #fff;
-      background-color: $linkcolor;
-      border-color: $linkcolor;
+      background-color: $linkhovercolor;
+      border-color: $linkhovercolor;
     }
     .list-group-item-heading, &:hover .list-group-item-heading, &:focus .list-group-item-heading {
       color: inherit;
@@ -1798,10 +1798,10 @@ a.list-group-item {
   }
   &.active > a {
     color: #fff;
-    background-color: $linkcolor;
+    background-color: $linkhovercolor;
     &:hover, &:focus {
       color: #fff;
-      background-color: $linkcolor;
+      background-color: $linkhovercolor;
     }
   }
 }
@@ -2590,7 +2590,7 @@ a {
 
 .page-opening-details {
   .opening-details-description strong {
-    color: $linkcolor;
+    color: $linkhovercolor;
   }
   .btn-apply-mob {
     display: none;

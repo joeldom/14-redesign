@@ -599,7 +599,7 @@
 
 .navbar-nav > li > a, .dropdown-menu > li > a, .dropdown-submenu > li > a {
   border-width: 0;
-  color: $linkcolor;
+  color: $linkhovercolor;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -609,7 +609,7 @@
 
 .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, .dropdown-submenu > li > a:hover, .navbar-nav > li > a:focus, .dropdown-menu > li > a:focus, .dropdown-submenu > li > a:focus, .navbar-nav > li > a.dropdown-toggle:hover, .dropdown-menu > li > a.dropdown-toggle:hover, .dropdown-submenu > li > a.dropdown-toggle:hover, .navbar-nav > li > a.dropdown-toggle:focus, .dropdown-menu > li > a.dropdown-toggle:focus, .dropdown-submenu > li > a.dropdown-toggle:focus {
   background: transparent;
-  color: $linkcolor;
+  color: $linkhovercolor;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
@@ -621,7 +621,7 @@
 
 .navbar-nav > li.active > a:hover, .dropdown-menu > li.active > a:hover, .dropdown-submenu > li.active > a:hover, .navbar-nav > li.open > a:hover, .dropdown-menu > li.open > a:hover, .dropdown-submenu > li.open > a:hover {
   background: transparent;
-  color: $linkcolor !important;
+  color: $linkhovercolor !important;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 

@@ -3773,6 +3773,10 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
 .icon-renren:before {
   content: "\f18b"; }
 
+/* body text color */
+/* default link color */
+/* color of link on hover */
+/* background color of body */
 /* line 8, ../sass/main.scss */
 html {
   font-size: 62.5%;

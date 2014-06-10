@@ -609,7 +609,7 @@
 
 .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, .dropdown-submenu > li > a:hover, .navbar-nav > li > a:focus, .dropdown-menu > li > a:focus, .dropdown-submenu > li > a:focus, .navbar-nav > li > a.dropdown-toggle:hover, .dropdown-menu > li > a.dropdown-toggle:hover, .dropdown-submenu > li > a.dropdown-toggle:hover, .navbar-nav > li > a.dropdown-toggle:focus, .dropdown-menu > li > a.dropdown-toggle:focus, .dropdown-submenu > li > a.dropdown-toggle:focus {
   background: transparent;
-  color: $linkcolor;
+  color: $linkhovercolor;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 

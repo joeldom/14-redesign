@@ -6933,20 +6933,27 @@ a {
     }
   }
   .tile-graphic {
+  	left:0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 1.5em .5em;
+    
     &.tile-small .tile-title {
-      bottom: 24px;
+      /* bottom: 24px; */
       font-size: 22px;
       line-height: 1.0909090909090908;
     }
     &.tile-medium .tile-title {
-      bottom: 30px;
       font-size: 30px;
       line-height: 1.2;
     }
     &.tile-large {
       .tile-excerpt {
-        bottom: 60px;
+        /*
+bottom: 60px;
         padding: 0 22px;
+*/
       }
       .tile-title {
         font-size: 50px;
@@ -6954,6 +6961,15 @@ a {
         line-height: .96;
         text-indent: -0.06em;
         margin-right: 41.66666666666667%;
+        background: none;
+        
+        :hover{
+	        background: $medgrey;
+	        -webkit-transition: all 0.5s ease;
+					   -moz-transition: all 0.5s ease;
+						   -o-transition: all 0.5s ease;
+							    transition: all 0.5s ease;
+        }
         + p {
           font-family: "Helvetica-Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
           line-height: 1.1;

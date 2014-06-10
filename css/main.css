@@ -3799,11 +3799,11 @@ a {
   text-decoration: none; }
   /* line 30, ../sass/main.scss */
   a:hover {
-    color: #841e1e;
+    color: #7ea29a;
     text-decoration: underline; }
   /* line 34, ../sass/main.scss */
   a:focus {
-    color: #841e1e;
+    color: #7ea29a;
     text-decoration: underline;
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -3943,7 +3943,7 @@ cite {
 
 /* line 177, ../sass/main.scss */
 .text-primary {
-  color: #841e1e; }
+  color: #7ea29a; }
   /* line 179, ../sass/main.scss */
   .text-primary:hover {
     color: #008b9c; }
@@ -4594,7 +4594,7 @@ fieldset[disabled] .btn-default.active {
 /* line 873, ../sass/main.scss */
 .btn-primary {
   color: #fff;
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
   /* line 877, ../sass/main.scss */
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
@@ -4618,57 +4618,57 @@ fieldset[disabled] .btn-default.active {
 
 /* line 901, ../sass/main.scss */
 .btn-primary.disabled, .btn-primary[disabled] {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 907, ../sass/main.scss */
 fieldset[disabled] .btn-primary {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 913, ../sass/main.scss */
 .btn-primary.disabled:hover, .btn-primary[disabled]:hover {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 919, ../sass/main.scss */
 fieldset[disabled] .btn-primary:hover {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 925, ../sass/main.scss */
 .btn-primary.disabled:focus, .btn-primary[disabled]:focus {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 931, ../sass/main.scss */
 fieldset[disabled] .btn-primary:focus {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 937, ../sass/main.scss */
 .btn-primary.disabled:active, .btn-primary[disabled]:active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 943, ../sass/main.scss */
 fieldset[disabled] .btn-primary:active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 949, ../sass/main.scss */
 .btn-primary.disabled.active, .btn-primary[disabled].active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 955, ../sass/main.scss */
 fieldset[disabled] .btn-primary.active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 960, ../sass/main.scss */
 .btn-primary .badge {
-  color: #841e1e;
+  color: #7ea29a;
   background-color: #fff; }
 
 /* line 965, ../sass/main.scss */
@@ -4914,7 +4914,7 @@ fieldset[disabled] .btn-success.active {
 /* line 1241, ../sass/main.scss */
 .btn-info {
   color: #fff;
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
   /* line 1245, ../sass/main.scss */
   .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
@@ -4938,57 +4938,57 @@ fieldset[disabled] .btn-success.active {
 
 /* line 1269, ../sass/main.scss */
 .btn-info.disabled, .btn-info[disabled] {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1275, ../sass/main.scss */
 fieldset[disabled] .btn-info {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1281, ../sass/main.scss */
 .btn-info.disabled:hover, .btn-info[disabled]:hover {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1287, ../sass/main.scss */
 fieldset[disabled] .btn-info:hover {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1293, ../sass/main.scss */
 .btn-info.disabled:focus, .btn-info[disabled]:focus {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1299, ../sass/main.scss */
 fieldset[disabled] .btn-info:focus {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1305, ../sass/main.scss */
 .btn-info.disabled:active, .btn-info[disabled]:active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1311, ../sass/main.scss */
 fieldset[disabled] .btn-info:active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1317, ../sass/main.scss */
 .btn-info.disabled.active, .btn-info[disabled].active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1323, ../sass/main.scss */
 fieldset[disabled] .btn-info.active {
-  background-color: #841e1e;
+  background-color: #7ea29a;
   border-color: #00a2b6; }
 
 /* line 1328, ../sass/main.scss */
 .btn-info .badge {
-  color: #841e1e;
+  color: #7ea29a;
   background-color: #fff; }
 
 /* line 1333, ../sass/main.scss */
@@ -5020,7 +5020,7 @@ fieldset[disabled] .btn-link {
     border-color: transparent; }
   /* line 1359, ../sass/main.scss */
   .btn-link:hover, .btn-link:focus {
-    color: #841e1e;
+    color: #7ea29a;
     text-decoration: underline;
     background-color: transparent; }
   /* line 1364, ../sass/main.scss */
@@ -5160,13 +5160,13 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #841e1e; }
+    background-color: #7ea29a; }
     /* line 1504, ../sass/main.scss */
     .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
       color: #fff;
       text-decoration: none;
       outline: 0;
-      background-color: #841e1e; }
+      background-color: #7ea29a; }
   /* line 1511, ../sass/main.scss */
   .dropdown-menu > .disabled > a {
     color: #d2d0cd; }
@@ -5270,14 +5270,14 @@ a.list-group-item {
   a.list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #841e1e;
-    border-color: #841e1e; }
+    background-color: #7ea29a;
+    border-color: #7ea29a; }
     /* line 1620, ../sass/main.scss */
     a.list-group-item.active:hover, a.list-group-item.active:focus {
       z-index: 2;
       color: #fff;
-      background-color: #841e1e;
-      border-color: #841e1e; }
+      background-color: #7ea29a;
+      border-color: #7ea29a; }
     /* line 1626, ../sass/main.scss */
     a.list-group-item.active .list-group-item-heading, a.list-group-item.active:hover .list-group-item-heading, a.list-group-item.active:focus .list-group-item-heading {
       color: inherit; }
@@ -5445,11 +5445,11 @@ a.list-group-item {
   /* line 1799, ../sass/main.scss */
   .nav-pills > li.active > a {
     color: #fff;
-    background-color: #841e1e; }
+    background-color: #7ea29a; }
     /* line 1802, ../sass/main.scss */
     .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
       color: #fff;
-      background-color: #841e1e; }
+      background-color: #7ea29a; }
 
 /* line 1809, ../sass/main.scss */
 .nav-stacked > li {
@@ -7207,7 +7207,7 @@ a {
 /* line 600, ../sass/_navbar.scss */
 .navbar-nav > li > a, .dropdown-menu > li > a, .dropdown-submenu > li > a {
   border-width: 0;
-  color: #62645c;
+  color: #7ea29a;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -7217,7 +7217,7 @@ a {
 /* line 610, ../sass/_navbar.scss */
 .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, .dropdown-submenu > li > a:hover, .navbar-nav > li > a:focus, .dropdown-menu > li > a:focus, .dropdown-submenu > li > a:focus, .navbar-nav > li > a.dropdown-toggle:hover, .dropdown-menu > li > a.dropdown-toggle:hover, .dropdown-submenu > li > a.dropdown-toggle:hover, .navbar-nav > li > a.dropdown-toggle:focus, .dropdown-menu > li > a.dropdown-toggle:focus, .dropdown-submenu > li > a.dropdown-toggle:focus {
   background: transparent;
-  color: #841e1e;
+  color: #7ea29a;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 
 /* line 616, ../sass/_navbar.scss */
@@ -7229,7 +7229,7 @@ a {
 /* line 622, ../sass/_navbar.scss */
 .navbar-nav > li.active > a:hover, .dropdown-menu > li.active > a:hover, .dropdown-submenu > li.active > a:hover, .navbar-nav > li.open > a:hover, .dropdown-menu > li.open > a:hover, .dropdown-submenu > li.open > a:hover {
   background: transparent;
-  color: #841e1e !important;
+  color: #7ea29a !important;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 
 /* line 628, ../sass/_navbar.scss */
@@ -7622,7 +7622,7 @@ body.modal-open, .modal-open .navbar-fixed-top {
       background: #18b78f; }
     /* line 196, ../sass/_modal.scss */
     .modal.custom-modal .modal-dialog .modalbody-header.blue {
-      background: #841e1e; }
+      background: #7ea29a; }
     /* line 199, ../sass/_modal.scss */
     .modal.custom-modal .modal-dialog .modalbody-header h1 {
       margin: 0;
@@ -7728,7 +7728,7 @@ body.modal-open, .modal-open .navbar-fixed-top {
     color: #878c8c; }
     /* line 13, ../sass/_footer.scss */
     .footer a:hover, .footer a:focus {
-      color: #841e1e; }
+      color: #7ea29a; }
   /* line 17, ../sass/_footer.scss */
   .footer address {
     line-height: 18px;
@@ -8151,7 +8151,7 @@ a.palette-inverse:hover, a.palette-inverse:focus {
 
 /* line 2592, ../sass/main.scss */
 .page-opening-details .opening-details-description strong {
-  color: #841e1e; }
+  color: #7ea29a; }
 /* line 2595, ../sass/main.scss */
 .page-opening-details .btn-apply-mob {
   display: none; }

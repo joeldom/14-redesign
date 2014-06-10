@@ -11,7 +11,7 @@
   a {
     color: #878c8c;
     &:hover, &:focus {
-      color: #841e1e;
+      color: $linkcolor;
     }
   }
   address {

@@ -6,7 +6,6 @@
 @import 'icon';
 @import 'colors';
 @import 'navbar';
-@import 'carousel';
 @import 'modal';
 @import 'footer';
 @import 'googlemap';
@@ -3732,7 +3731,83 @@ a {
 				END OF TILE-GRAPHIC & TILE-TITLE 
 
 */
+.carousel {
+  p, .tile {
+    margin-bottom: 0;
+  }
+}
 
+.carousel-indicators {
+  bottom: auto;
+  top: 290px;
+  li, .active {
+    border-width: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: 8px;
+    margin: 0 2px;
+    width: 8px;
+  }
+  li {
+    background-color: #fff;
+  }
+}
+
+.carousel-control {
+  background: rgba(210, 208, 205, 0.6) !important;
+  border-width: 0;
+  -webkit-border-radius: 31px;
+  -moz-border-radius: 31px;
+  border-radius: 31px;
+  font-size: 15px;
+  height: 31px;
+  line-height: 31px;
+  top: 144.5px;
+  width: 31px;
+  &.left {
+    left: 11px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  }
+  &.right {
+    right: 11px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-indicators {
+    top: 10px;
+  }
+  .carousel-control {
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-size: 22px;
+    height: 60px;
+    line-height: 62px;
+    top: 192px;
+    width: 60px;
+    &.left {
+      left: 9px;
+    }
+    &.right {
+      right: 9px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-control {
+    top: 264px;
+  }
+}
+
+@media (min-width: 1380px) {
+  .carousel-control {
+    top: 294px;
+  }
+}
 
 .assistive-text, .screen-reader-text {
   position: absolute!important;

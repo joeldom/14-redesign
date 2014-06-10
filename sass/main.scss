@@ -5,11 +5,6 @@
 @import 'bootstrap';
 @import 'icon';
 @import 'colors';
-@import 'navbar';
-@import 'modal';
-@import 'footer';
-@import 'googlemap';
-@import 'palette';
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -3808,6 +3803,12 @@ a {
     top: 294px;
   }
 }
+
+@import 'navbar';
+@import 'modal';
+@import 'footer';
+@import 'googlemap';
+@import 'palette';
 
 .assistive-text, .screen-reader-text {
   position: absolute!important;

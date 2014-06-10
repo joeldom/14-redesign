@@ -6640,6 +6640,8 @@ a {
 
   /* line 229, ../sass/_carousel.scss */
   .carousel-control {
+    font-size: 70px;
+    line-height: 49px;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     border-radius: 60px;
@@ -6648,18 +6650,18 @@ a {
     line-height: 62px;
     top: 192px;
     width: 60px; }
-    /* line 238, ../sass/_carousel.scss */
+    /* line 240, ../sass/_carousel.scss */
     .carousel-control.left {
       left: 9px; }
-    /* line 241, ../sass/_carousel.scss */
+    /* line 243, ../sass/_carousel.scss */
     .carousel-control.right {
       right: 9px; } }
 @media (min-width: 992px) {
-  /* line 248, ../sass/_carousel.scss */
+  /* line 250, ../sass/_carousel.scss */
   .carousel-control {
     top: 264px; } }
 @media (min-width: 1380px) {
-  /* line 254, ../sass/_carousel.scss */
+  /* line 256, ../sass/_carousel.scss */
   .carousel-control {
     top: 294px; } }
 /* line 2, ../sass/_navbar.scss */

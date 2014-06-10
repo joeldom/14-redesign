@@ -7068,22 +7068,22 @@ a {
 
   /* line 6940, ../sass/main.scss */
   .tile-graphic.tile-small .tile-title {
-    /* bottom: 24px; */
+    bottom: 24px;
     font-size: 22px;
-    line-height: 1.0909090909090908;
+    line-height: 1.0909090909090908; }
+  /* line 6945, ../sass/main.scss */
+  .tile-graphic.tile-medium .tile-title {
+    /* bottom: 30px; */
+    font-size: 30px;
+    line-height: 1.2;
     bottom: 0;
     left: 0;
     display: block;
     width: 100%;
     padding: 1.5em .5em; }
-    /* line 6950, ../sass/main.scss */
-    .tile-graphic.tile-small .tile-title:hover {
+    /* line 6955, ../sass/main.scss */
+    .tile-graphic.tile-medium .tile-title:hover {
       background: rgba(186, 186, 186, 0.7); }
-  /* line 6954, ../sass/main.scss */
-  .tile-graphic.tile-medium .tile-title {
-    bottom: 30px;
-    font-size: 30px;
-    line-height: 1.2; }
   /* line 6960, ../sass/main.scss */
   .tile-graphic.tile-large .tile-excerpt {
     bottom: 60px;

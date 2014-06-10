@@ -6938,15 +6938,24 @@ a {
   }
   .tile-graphic {
     &.tile-small .tile-title {
-      bottom: 24px;
+      /* bottom: 24px; */
       font-size: 22px;
       line-height: 1.0909090909090908;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      padding: 1.5em .5em;
+      
+      	&:hover{
+	      	background: rgba(186,186,186,0.7)
+				}
     }
     &.tile-medium .tile-title {
      /* bottom: 30px; */
       font-size: 30px;
       line-height: 1.2;
-       bottom: 0;
+      bottom: 0;
       left: 0;
       display: block;
       width: 100%;

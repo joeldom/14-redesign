@@ -256,3 +256,568 @@
     padding-right: 34px;
   }
 }
+.navbar {
+  position: relative;
+  min-height: 42px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
+}
+
+.navbar-header {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+
+.navbar-collapse {
+  max-height: 340px;
+  overflow-x: visible;
+  padding-right: 36px;
+  padding-left: 36px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  &.in {
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    &.collapse {
+      display: block!important;
+      height: auto!important;
+      padding-bottom: 0;
+      overflow: visible!important;
+    }
+    &.in {
+      overflow-y: visible;
+    }
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container > {
+  .navbar-header, .navbar-collapse {
+    margin-right: -36px;
+    margin-left: -36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container > {
+    .navbar-header, .navbar-collapse {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+
+@media (min-width: 768px) {
+  .navbar-static-top {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 36px 36px;
+  font-size: 18px;
+  line-height: 18px;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand {
+    margin-left: -36px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 36px;
+  padding: 9px 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    + .icon-bar {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin: 18px -36px;
+  > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    > li > a, .dropdown-header {
+      padding: 5px 15px 5px 25px;
+    }
+    > li > a {
+      line-height: 18px;
+      &:hover, &:focus {
+        background-image: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+    > li {
+      float: left;
+      > a {
+        padding-top: 36px;
+        padding-bottom: 36px;
+      }
+    }
+    &.navbar-right:last-child {
+      margin-right: -36px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-left {
+    float: left!important;
+    float: left;
+  }
+  .navbar-right {
+    float: right!important;
+    float: right;
+  }
+}
+
+.navbar-form {
+  margin-left: -36px;
+  margin-right: -36px;
+  padding: 10px 36px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .navbar-form {
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    .form-control {
+      display: inline-block;
+    }
+    select.form-control {
+      width: auto;
+    }
+    .radio, .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+    .radio input[type="radio"], .checkbox input[type="checkbox"] {
+      float: none;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-form .form-group {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    &.navbar-right:last-child {
+      margin-right: -36px;
+    }
+  }
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.navbar-nav {
+  &.pull-right > li > .dropdown-menu, > li > .dropdown-menu.pull-right {
+    left: auto;
+    right: 0;
+  }
+}
+
+.navbar-btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  &.btn-sm {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  &.btn-xs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.navbar-text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .navbar-text {
+    float: left;
+    margin-left: 36px;
+    margin-right: 36px;
+    &.navbar-right:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  .navbar-brand {
+    color: #62645c;
+    &:hover, &:focus {
+      color: #62645c;
+      background-color: transparent;
+    }
+  }
+  .navbar-text {
+    color: #777;
+  }
+  .navbar-nav > {
+    li > a {
+      color: #62645c;
+      &:hover, &:focus {
+        color: #62645c;
+        background-color: transparent;
+      }
+    }
+    .active > a {
+      color: #62645c;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #62645c;
+        background-color: transparent;
+      }
+    }
+    .disabled > a {
+      color: #ccc;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #ccc;
+        background-color: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: #ddd;
+    &:hover, &:focus {
+      background-color: #ddd;
+    }
+    .icon-bar {
+      background-color: #ccc;
+    }
+  }
+  .navbar-collapse, .navbar-form {
+    border-color: #e7e7e7;
+  }
+  .navbar-nav > .open > a {
+    background-color: transparent;
+    color: #62645c;
+    &:hover, &:focus {
+      background-color: transparent;
+      color: #62645c;
+    }
+  }
+  .navbar-link {
+    color: #62645c;
+    &:hover {
+      color: #62645c;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > {
+    li > a {
+      color: #62645c;
+      &:hover, &:focus {
+        color: #62645c;
+        background-color: transparent;
+      }
+    }
+    .active > a {
+      color: #62645c;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #62645c;
+        background-color: transparent;
+      }
+    }
+    .disabled > a {
+      color: #ccc;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #ccc;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+  .navbar-brand {
+    color: #d2d0cd;
+    &:hover, &:focus {
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+  .navbar-text {
+    color: #d2d0cd;
+  }
+  .navbar-nav > {
+    li > a {
+      color: #d2d0cd;
+      &:hover, &:focus {
+        color: #fff;
+        background-color: transparent;
+      }
+    }
+    .active > a {
+      color: #fff;
+      background-color: #080808;
+      &:hover, &:focus {
+        color: #fff;
+        background-color: #080808;
+      }
+    }
+    .disabled > a {
+      color: #444;
+      background-color: transparent;
+      &:hover, &:focus {
+        color: #444;
+        background-color: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    border-color: #333;
+    &:hover, &:focus {
+      background-color: #333;
+    }
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+  .navbar-collapse, .navbar-form {
+    border-color: #101010;
+  }
+  .navbar-nav > .open > a {
+    background-color: #080808;
+    color: #fff;
+    &:hover, &:focus {
+      background-color: #080808;
+      color: #fff;
+    }
+  }
+  .navbar-link {
+    color: #d2d0cd;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu {
+    > .dropdown-header {
+      border-color: #080808;
+    }
+    .divider {
+      background-color: #080808;
+    }
+    > {
+      li > a {
+        color: #d2d0cd;
+        &:hover, &:focus {
+          color: #fff;
+          background-color: transparent;
+        }
+      }
+      .active > a {
+        color: #fff;
+        background-color: #080808;
+        &:hover, &:focus {
+          color: #fff;
+          background-color: #080808;
+        }
+      }
+      .disabled > a {
+        color: #444;
+        background-color: transparent;
+        &:hover, &:focus {
+          color: #444;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

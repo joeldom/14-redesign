@@ -6651,7 +6651,11 @@ a {
 .tile-carousel .category {
   margin-bottom: 12px!important;
 }
+/* 
 
+				START OF TILE-GRAPHIC & TILE-TITLE 
+
+*/
 .tile-graphic {
   .tile-title {
     font-size: 14px;
@@ -6663,7 +6667,6 @@ a {
     right: 10px;
     top: 12px;
     text-shadow: 1px 1px 1px rgba(101, 101, 101, 0.2);
-    :hover{background: white;}
     + p {
       margin-top: 6px;
     }
@@ -6935,18 +6938,23 @@ a {
   }
   .tile-graphic {
     &.tile-small .tile-title {
-      bottom: 24px;
+      /* bottom: 24px; */
       font-size: 22px;
       line-height: 1.0909090909090908;
-    }
-    &.tile-medium .tile-title {
-      font-size: 30px;
-      line-height: 1.2;
-      left:0;
       bottom: 0;
+      left: 0;
       display: block;
       width: 100%;
       padding: 1.5em .5em;
+      
+      &:hover{
+	      background: rgba(186,186,186,0.7)
+      }
+    }
+    &.tile-medium .tile-title {
+      bottom: 30px;
+      font-size: 30px;
+      line-height: 1.2;
     }
     &.tile-large {
       .tile-excerpt {
@@ -6959,10 +6967,6 @@ a {
         line-height: .96;
         text-indent: -0.06em;
         margin-right: 41.66666666666667%;
-        
-        :hover{
-	        background: white;
-        }
         + p {
           font-family: "Helvetica-Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
           line-height: 1.1;
@@ -7092,7 +7096,11 @@ a {
     }
   }
 }
+/* 
 
+				END OF TILE-GRAPHIC & TILE-TITLE 
+
+*/
 .carousel {
   p, .tile {
     margin-bottom: 0;

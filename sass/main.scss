@@ -6946,9 +6946,18 @@ a {
       display: block;
       width: 100%;
       padding: 1.5em .5em;
+      background: none;
+      -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
       
       	&:hover{
-	      	background: rgba(186,186,186,0.7)
+	      	background: rgba(186,186,186,0.7);
+	      	-webkit-transition: all 0.5s ease;
+					   -moz-transition: all 0.5s ease;
+               -o-transition: all 0.5s ease;
+                  transition: all 0.5s ease;
 				}
     }
     &.tile-medium .tile-title {
@@ -6960,9 +6969,18 @@ a {
       display: block;
       width: 100%;
       padding: 1.5em .5em;
+      background: none;
+      -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
       
       	&:hover{
-	      	background: rgba(186,186,186,0.7)
+	      	background: rgba(186,186,186,0.7);
+	      	-webkit-transition: all 0.5s ease;
+					   -moz-transition: all 0.5s ease;
+						   -o-transition: all 0.5s ease;
+							    transition: all 0.5s ease;
 				}
     }
     &.tile-large {

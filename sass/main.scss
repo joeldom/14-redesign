@@ -6939,9 +6939,13 @@ a {
       line-height: 1.0909090909090908;
     }
     &.tile-medium .tile-title {
-      bottom: 30px;
       font-size: 30px;
       line-height: 1.2;
+      left:0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      padding: 1.5em .5em;
     }
     &.tile-large {
       .tile-excerpt {
@@ -6954,12 +6958,10 @@ a {
         line-height: .96;
         text-indent: -0.06em;
         margin-right: 41.66666666666667%;
-        left:0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        padding: 1.5em .5em;
-        background: white;
+        
+        :hover{
+	        background: white;
+        }
         + p {
           font-family: "Helvetica-Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
           line-height: 1.1;

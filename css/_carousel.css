@@ -1,0 +1,71 @@
+/* line 4, ../sass/_carousel.scss */
+.carousel p, .carousel .tile {
+  margin-bottom: 0; }
+
+/* line 9, ../sass/_carousel.scss */
+.carousel-indicators {
+  bottom: auto;
+  top: 290px; }
+  /* line 12, ../sass/_carousel.scss */
+  .carousel-indicators li, .carousel-indicators .active {
+    border-width: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: 8px;
+    margin: 0 2px;
+    width: 8px; }
+  /* line 21, ../sass/_carousel.scss */
+  .carousel-indicators li {
+    background-color: #fff; }
+
+/* line 26, ../sass/_carousel.scss */
+.carousel-control {
+  background: rgba(210, 208, 205, 0.6) !important;
+  border-width: 0;
+  -webkit-border-radius: 31px;
+  -moz-border-radius: 31px;
+  border-radius: 31px;
+  font-size: 15px;
+  height: 31px;
+  line-height: 31px;
+  top: 144.5px;
+  width: 31px; }
+  /* line 37, ../sass/_carousel.scss */
+  .carousel-control.left {
+    left: 11px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+  /* line 41, ../sass/_carousel.scss */
+  .carousel-control.right {
+    right: 11px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+@media (min-width: 768px) {
+  /* line 48, ../sass/_carousel.scss */
+  .carousel-indicators {
+    top: 10px; }
+
+  /* line 51, ../sass/_carousel.scss */
+  .carousel-control {
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-size: 22px;
+    height: 60px;
+    line-height: 62px;
+    top: 192px;
+    width: 60px; }
+    /* line 60, ../sass/_carousel.scss */
+    .carousel-control.left {
+      left: 9px; }
+    /* line 63, ../sass/_carousel.scss */
+    .carousel-control.right {
+      right: 9px; } }
+@media (min-width: 992px) {
+  /* line 70, ../sass/_carousel.scss */
+  .carousel-control {
+    top: 264px; } }
+@media (min-width: 1380px) {
+  /* line 76, ../sass/_carousel.scss */
+  .carousel-control {
+    top: 294px; } }

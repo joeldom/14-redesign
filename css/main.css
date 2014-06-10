@@ -7211,7 +7211,7 @@ a {
 /* line 600, ../sass/_navbar.scss */
 .navbar-nav > li > a, .dropdown-menu > li > a, .dropdown-submenu > li > a {
   border-width: 0;
-  color: #7ea29a;
+  color: #545454;
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
@@ -7221,7 +7221,7 @@ a {
 /* line 610, ../sass/_navbar.scss */
 .navbar-nav > li > a:hover, .dropdown-menu > li > a:hover, .dropdown-submenu > li > a:hover, .navbar-nav > li > a:focus, .dropdown-menu > li > a:focus, .dropdown-submenu > li > a:focus, .navbar-nav > li > a.dropdown-toggle:hover, .dropdown-menu > li > a.dropdown-toggle:hover, .dropdown-submenu > li > a.dropdown-toggle:hover, .navbar-nav > li > a.dropdown-toggle:focus, .dropdown-menu > li > a.dropdown-toggle:focus, .dropdown-submenu > li > a.dropdown-toggle:focus {
   background: transparent;
-  color: #7ea29a;
+  color: #545454;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 
 /* line 616, ../sass/_navbar.scss */

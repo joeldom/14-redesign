@@ -5,12 +5,6 @@
 @import 'bootstrap';
 @import 'icon';
 @import 'colors';
-@import 'carousel';
-@import 'navbar';
-@import 'modal';
-@import 'footer';
-@import 'googlemap';
-@import 'palette';
 html {
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -2627,186 +2621,6 @@ a.list-group-item {
   }
 }
 
-.carousel {
-  position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  > {
-    .item {
-      display: none;
-      position: relative;
-      -webkit-transition: .6s ease-in-out left;
-      transition: .6s ease-in-out left;
-      > {
-        img, a > img {
-          display: block;
-          max-width: 100%;
-          height: auto;
-          line-height: 1;
-        }
-      }
-    }
-    .active, .next, .prev {
-      display: block;
-    }
-    .active {
-      left: 0;
-    }
-    .next, .prev {
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-    .next {
-      left: 100%;
-    }
-    .prev {
-      left: -100%;
-    }
-    .next.left, .prev.right {
-      left: 0;
-    }
-    .active {
-      &.left {
-        left: -100%;
-      }
-      &.right {
-        left: 100%;
-      }
-    }
-  }
-}
-
-.carousel-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 15%;
-  opacity: .5;
-  filter: alpha(opacity = 50);
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(101, 101, 101, 0.2);
-  &.left {
-    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  }
-  &.right {
-    left: auto;
-    right: 0;
-    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  }
-  &:hover, &:focus {
-    outline: 0;
-    color: #fff;
-    text-decoration: none;
-    opacity: .9;
-    filter: alpha(opacity = 90);
-  }
-  .icon-prev, .icon-next, .glyphicon-chevron-left, .glyphicon-chevron-right {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: inline-block;
-  }
-  .icon-prev, .glyphicon-chevron-left {
-    left: 50%;
-  }
-  .icon-next, .glyphicon-chevron-right {
-    right: 50%;
-  }
-  .icon-prev, .icon-next {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    font-family: serif;
-  }
-  .icon-prev:before {
-    content: '\2039';
-  }
-  .icon-next:before {
-    content: '\203a';
-  }
-}
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-  li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  .active {
-    margin: 0;
-    width: 12px;
-    height: 12px;
-    background-color: #b0aca8;
-  }
-}
-
-.carousel-caption {
-  position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(101, 101, 101, 0.2);
-  .btn {
-    text-shadow: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-control {
-    .glyphicons-chevron-left, .glyphicons-chevron-right, .icon-prev, .icon-next {
-      width: 30px;
-      height: 30px;
-      margin-top: -15px;
-      margin-left: -15px;
-      font-size: 30px;
-    }
-  }
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
-  .carousel-indicators {
-    bottom: 20px;
-  }
-}
-
 @font-face {
   font-family: "Helvetica-Neue";
   font-style: normal;
@@ -3732,6 +3546,12 @@ a {
 				END OF TILE-GRAPHIC & TILE-TITLE 
 
 */
+@import 'carousel';
+@import 'navbar';
+@import 'modal';
+@import 'footer';
+@import 'googlemap';
+@import 'palette';
 
 .assistive-text, .screen-reader-text {
   position: absolute!important;

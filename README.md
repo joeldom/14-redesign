@@ -1,5 +1,6 @@
 #14-Redesign
 ###2014 Site Redesign
+[14-Redesign Link](http://joeldom.github.io/14-redesign/)
 
 This version was intended to be a full redesign build out using **Bootstrap** instead of **Foundation**. Some of the ideas going in where to include features such as: compiling, versioning, all in a responisve framework with dynamic content.
 

@@ -77,15 +77,13 @@
 					<script type="text/javascript">
 						function init_map(){
 							var stylesArray = [
-								{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},
-								{"featureType":"all","elementType":"geometry.fill","stylers":[{"saturation":-100}]},
-								{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},
-								{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":30}]},
-								{"featureType":"water","elementType":"geometry.fill","stylers":[{"hue":"#4c639e"},{"lightness":-37}]},
-								{"featureType":"road","elementType":"labels","stylers":[{"weight":2.44},{"saturation":-85},{"gamma":0.75}]},
-								{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"lightness":-10}]},
-								{"featureType":"water","elementType":"labels","stylers":[{"saturation":-100},{"lightness":-11}]},
-								{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"on"},{"saturation":-73},{"lightness":-10}]}
+								{"featureType":"all","elementType":"geometry","stylers":[{"saturation":-100}]},
+								{"featureType":"all","elementType":"labels.text","stylers":[{"weight":1.49},{"saturation":-100},{"lightness":28}]},
+								{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},
+								{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"saturation":-100}]},
+								{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},
+								{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+								{"featureType":"water","elementType":"geometry","stylers":[{"invert_lightness":true},{"lightness":66}]}
 							]
 
 							var myOptions = {

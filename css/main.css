@@ -6651,13 +6651,13 @@ a {
     /* line 238, ../sass/_carousel.scss */
     .carousel-control.left {
       left: 9px;
-      font-size: 70px;
-      line-height: 49px; }
+      font-size: 50px;
+      line-height: 50px; }
     /* line 243, ../sass/_carousel.scss */
     .carousel-control.right {
       right: 9px;
-      font-size: 70px;
-      line-height: 49px; } }
+      font-size: 50px;
+      line-height: 50px; } }
 @media (min-width: 992px) {
   /* line 252, ../sass/_carousel.scss */
   .carousel-control {

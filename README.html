@@ -1,0 +1,169 @@
+<h1>14-redesign </h1>
+
+<p>2014 Site redesign is slowly becoming a 2015 redesign</p>
+
+<p><strong>Changelog:</strong></p>
+
+<ul>
+<li>Oct 20th updated fontawesome</li>
+<li>added partials folders</li>
+</ul>
+
+
+<h1>SASS Architecture V.1 </h1>
+
+<p>Refferences:</p>
+
+<ol>
+<li><a href="http://www.sitepoint.com/architecture-sass-project/">http://www.sitepoint.com/architecture-sass-project/</a></li>
+<li><a href="http://www.sitepoint.com/look-different-sass-architectures/">http://www.sitepoint.com/look-different-sass-architectures/</a></li>
+</ol>
+
+
+<p>“Multiple files in dev, a single file in prod.”
+— Bruce Lee</p>
+
+<p><strong>Here’s how we might organize our files:</strong></p>
+
+<pre><code>v1
+sass/ 
+| 
+|– base/ 
+|   |– _reset.scss       # Reset/normalize 
+|   |– _typography.scss  # Typography rules 
+|   ...                  # Etc… 
+| 
+|– components/ 
+|   |– _buttons.scss     # Buttons 
+|   |– _carousel.scss    # Carousel 
+|   |– _cover.scss       # Cover 
+|   |– _dropdown.scss    # Dropdown 
+|   |– _navigation.scss  # Navigation 
+|   ...                  # Etc… 
+| 
+|– helpers/ 
+|   |– _variables.scss   # Sass Variables 
+|   |– _functions.scss   # Sass Functions 
+|   |– _mixins.scss      # Sass Mixins 
+|   |– _helpers.scss     # Class &amp; placeholders helpers 
+|   ...                  # Etc… 
+| 
+|– layout/ 
+|   |– _grid.scss        # Grid system 
+|   |– _header.scss      # Header 
+|   |– _footer.scss      # Footer 
+|   |– _sidebar.scss     # Sidebar 
+|   |– _forms.scss       # Forms 
+|   ...                  # Etc… 
+| 
+|– pages/ 
+|   |– _home.scss        # Home specific styles 
+|   |– _contact.scss     # Contact specific styles 
+|   ...                  # Etc… 
+| 
+|– themes/ 
+|   |– _theme.scss       # Default theme 
+|   |– _admin.scss       # Admin theme 
+|   ...                  # Etc… 
+| 
+|– vendors/ 
+|   |– _bootstrap.scss   # Bootstrap 
+|   |– _jquery-ui.scss   # jQuery UI 
+|   ...                  # Etc… 
+| 
+| 
+`– main.scss             # primary Sass file 
+</code></pre>
+
+<p>As you can see, there is only one Sass file at the root level: main.scss. All the other files are divided into appropriate folders and prefixed with an underscore (_) to tell Sass they are partial .scss files that shouldn’t be compiled to .css files. Indeed, it is the base file’s role to import and merge all of those.</p>
+
+<p>Let’s now look at each of the folders in our architecture.</p>
+
+<p><strong>Base</strong></p>
+
+<p>The <code>base/</code> folder holds what we might call the boilerplate stuff for your project. In there, you might find the reset (or Normalize.css, or whatever), probably some stuff dealing with typography, and, depending on the project, maybe some other files.</p>
+
+<ul>
+<li><code>_reset.scss</code> or <code>_normalize.scss</code></li>
+<li><code>_typography.scss</code></li>
+</ul>
+
+
+<p><strong>Helpers</strong></p>
+
+<p>The <code>helpers/</code> folder (sometimes called <code>utils/</code>) gathers all Sass tools and helpers we’ll use across the project. Got a function? A mixin? Put it in there. This folder also contains a <code>_variables.scss</code> file (sometimes ```_config.scss) which holds all global variables for the project (for typography, color schemes, and so on).</p>
+
+<ul>
+<li><code>_variables.scss</code></li>
+<li><code>_mixins.scss</code></li>
+<li><code>_functions.scss</code></li>
+<li><code>_placeholders.scss</code> (frequently named <code>_helpers.scss</code>)</li>
+</ul>
+
+
+<p><strong>Layout</strong></p>
+
+<p>The <code>layout/</code> directory (sometimes called <code>partials/</code>) usually contains a number of files, each of them setting some styles for the main sections of the layout (header, footer, and so on). It also contains the <code>_grid</code> file which is the grid system used to build the layout.</p>
+
+<ul>
+<li>_grid.scss</li>
+<li>_header.scss</li>
+<li>_footer.scss</li>
+<li>_sidebar.scss</li>
+<li>_forms.scss</li>
+</ul>
+
+
+<p>Having the navigation file (<code>_navigation.scss</code>) in this folder could make sense although I use to put it in <code>components/</code> (see next section). I think it would be better in the <code>/layout</code> folder but I’ll let you decide.</p>
+
+<p><strong>Components</strong></p>
+
+<p>For smaller components, there is the <code>components/</code> folder (frequently called <code>modules/</code>). While <code>layout/</code> is kind of <em>macro</em> (defining the global wireframe), components/ is more <em>micro</em>. It can contain all kinds of specific modules like a slider, a loader, a widget, or anything along those lines. There are usually a lot of files in <code>components/</code> since your site is should be mostly composed of tiny modules.</p>
+
+<ul>
+<li><code>_media.scss</code></li>
+<li><code>_carousel.scss</code></li>
+<li><code>_thumbnails.scss</code></li>
+</ul>
+
+
+<p><strong>Pages</strong></p>
+
+<p>If you have page-specific styles, I think it’s cool to put them in a pages/ folder and in a file named after the page. For example, it’s not uncommon to have very specific styles for the home page, so you’d have a _home.scss file in pages/ dealing with this.</p>
+
+<ul>
+<li><code>_home.scss</code></li>
+<li><code>_contact.scss</code></li>
+</ul>
+
+
+<p>Depending on your deployment process, those files could be called on their own to avoid merging them with the others in the resulting stylesheet. It is really up to you. Where I work, we decided to make them not-partials in order to include them only on pages requiring them. For example, our home page has a very specific layout, compiling to about 200 lines of CSS. To prevent those rules from being loaded on every page, we include this file only on the home page.</p>
+
+<p><strong>Themes</strong></p>
+
+<p>If you are working on a large site with multiple themes like I do, having a <code>themes/</code> folder can make sense. You can stuff all your theme/design related styles in there. This is definitely project-specific so be sure to include it only if you feel the need.</p>
+
+<ul>
+<li><code>_theme.scss</code></li>
+<li><code>_admin.scss</code></li>
+</ul>
+
+
+<p><strong>Vendors</strong></p>
+
+<p>And last but not least, you will probably have a <code>vendors/</code> folder containing all the CSS files from external libraries and frameworks – Bootstrap, jQueryUI, FancyCarouselSliderjQueryPowered, and so on. Putting those aside in the same folder is a good way to tell “Hey, this is not from me, not my code, not my responsibility”.</p>
+
+<p>Example:</p>
+
+<ul>
+<li><code>bootstrap.scss</code></li>
+<li><code>jquery-ui.scss</code></li>
+<li><code>select2.scss</code></li>
+</ul>
+
+
+<p>On a side note, where I work we also have a <code>vendors-extensions/</code> folder where we store files overriding some tiny bits from vendors. For example, we have a <code>_bootstrap.scss</code> file in there that we can use to change some components in Bootstrap. This is to avoid editing the vendor files themselves, which is generally not a good idea.</p>
+
+<p>That’s pretty much it. This architecture is likely to vary according to the project but I’m sure you get the concept. On nesting folders in folders, I wouldn’t always advise against it but I don’t prefer that. I’ve found that in most cases, a single level of architecture is more than enough to keep things clean and organized without adding too much complexity. But if you think your project deserves a deeper structure, feel free to do so.</p>
+
+<p>Pro tip: if you feel like your architecture isn’t obvious to anyone opening up the <code>scss</code> folder, you might consider adding a <code>README.md</code> file at the root level (side by side with <code>main.scss</code>) explaining everything.</p>

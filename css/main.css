@@ -8127,7 +8127,7 @@ body.modal-open, .modal-open .navbar-fixed-top {
     margin-left: -6px;
     position: relative;
     text-align: center;
-    top: .25em;
+    /* top: .25em; */
     width: 24px; }
 
 /* line 34, ../sass/_footer.scss */

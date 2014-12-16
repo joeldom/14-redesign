@@ -3,9 +3,10 @@
 2014 Site redesign is slowly becoming a 2015 redesign
 
 **Changelog:**
-
+- Dec 16th Defining image templates
+- Dec 15th added navicon styling
 - Oct 20th updated fontawesome 
-- added partials folders
+- Sep 12th added partials folders
 
 SASS Architecture V.1 
 ===========
@@ -13,6 +14,8 @@ Refferences:
 
 1. <http://www.sitepoint.com/architecture-sass-project/>
 2. <http://www.sitepoint.com/look-different-sass-architectures/>
+3. Macaw <http://bit.ly/137kc8p/>
+4. Bootstrap Paralax Jumbotron <http://www.bootply.com/103783/>
 
 “Multiple files in dev, a single file in prod.”
 — Bruce Lee

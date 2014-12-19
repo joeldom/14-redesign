@@ -8,6 +8,13 @@
 - Oct 20th updated fontawesome 
 - Sep 12th added partials folders
 
+===========
+To Do's:
+
+1. add CSS navicon animation
+2. add salvattore grid scripts
+3. add font-awesome icons
+
 SASS Architecture V.1 
 ===========
 Refferences:
@@ -17,8 +24,7 @@ Refferences:
 3. Macaw <http://bit.ly/137kc8p/>
 4. Bootstrap Paralax Jumbotron <http://www.bootply.com/103783/>
 
-“Multiple files in dev, a single file in prod.”
-— Bruce Lee
+“Multiple files in dev, a single file in prod.” — Bruce Lee
 
 **Here’s how we might organize our files:**
 
